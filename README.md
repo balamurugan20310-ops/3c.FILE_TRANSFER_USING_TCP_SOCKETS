@@ -44,6 +44,7 @@ while True:
 Client Side
 ```py
 import socket
+
 s = socket.socket()
 host = socket.gethostname()
 port = 60000
@@ -60,11 +61,18 @@ with open('mytext.txt', 'wb') as f:
         f.write(data)
 
 print('Successfully received the file')
+
+# Open and Read File
+print("\nFile Content:")
+with open("mytext.txt", "r") as f:
+    print(f.read())
+
 s.close()
 print('Connection closed')
+
 ```
 ## OUPUT
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/075deeca-ad28-4fd8-a4e6-1b50ec8e8de7" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f6c10df4-b916-439b-a8b2-6da87c93c36a" />
 
 ## RESULT
 Thus, the python program for creating File Transfer using TCP Sockets Links was 
